@@ -1,0 +1,15 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\net5.0\Services.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\net5.0\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\net5.0\ref\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\net5.0\Services.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\net5.0\Models.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\net5.0\Models.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.csproj.CopyComplete
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\ref\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\net5.0\Services.pdb

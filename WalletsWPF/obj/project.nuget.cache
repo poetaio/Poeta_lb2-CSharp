@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eo7a800TSchWOCPX+qbBfg3dXnP8bRZueN79POvFI5Gjm2dK6fg6lJbL1m6KXycVXMvu3Yrmt67h5ONX3ZcRyw==",
+  "success": true,
+  "projectFilePath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\WalletsWPF\\WalletsWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ilya2\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512"
+  ],
+  "logs": []
+}
