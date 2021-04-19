@@ -31,8 +31,21 @@ namespace WalletsWPF.Wallets
         }
         private WalletService _service;
         private WalletsDetailsViewModel _currentWallet;
+        private ObservableCollection<WalletsDetailsViewModel> _wallets;
+        private bool _emptyMessageVisible;
+
         public UserInfoViewModel UserInfo { get; set; }
         public DelegateCommand AddWalletCommand { get; set; }
+        public MainNavigatableTypes Type => MainNavigatableTypes.Wallets;
+        public bool EmptyMessageVisible 
+        {
+            get => _emptyMessageVisible; 
+            set
+            {
+                _emptyMessageVisible = value;
+                RaisePropertyChanged(nameof(EmptyMessageVisible));
+            }
+        }
         public WalletsDetailsViewModel CurrentWallet
         {
             get
@@ -45,10 +58,14 @@ namespace WalletsWPF.Wallets
                 RaisePropertyChanged(nameof(CurrentWallet));
             }
         }
-        public ObservableCollection<WalletsDetailsViewModel> Wallets 
+        public ObservableCollection<WalletsDetailsViewModel> Wallets
         {
-            get;
-            set; 
+            get => _wallets;
+            set
+            {
+                _wallets = value;
+                RaisePropertyChanged(nameof(Wallets));
+            }
         }
         public WalletsViewModel(User currentUser)
         {
@@ -64,10 +81,12 @@ namespace WalletsWPF.Wallets
                 .Select(x => new WalletsDetailsViewModel(x, RemoveWallet, InterfaceEnable))
                 .ToList()
             );
+            EmptyMessageVisible = _wallets.Count == 0;
         }
         public void AddWallet()
         {
             CurrentUser.Wallets.Add(new Wallet());
+            EmptyMessageVisible = false;
             Wallets.Add(new WalletsDetailsViewModel(CurrentUser.Wallets.Last(), RemoveWallet, InterfaceEnable));
             RaisePropertyChanged(nameof(Wallets));
         }
@@ -75,14 +94,19 @@ namespace WalletsWPF.Wallets
         public void RemoveWallet(Guid walletGuid)
         {
             CurrentUser.Wallets.RemoveAll(x => x.Guid == walletGuid);
-            foreach (WalletsDetailsViewModel walletDetails in Wallets)
+            for (int i = 0; i < Wallets.Count; i++)
             {
-                if (walletDetails.Guid == walletGuid)
+                if (Wallets[i].Guid == walletGuid)
                 {
-                    Wallets.Remove(walletDetails);
+                    Wallets.RemoveAt(i);
+                    if (i > 0)
+                        CurrentWallet = Wallets[i - 1];
+                    else if (Wallets.Count() > 0)
+                        CurrentWallet = Wallets[0];
                     break;
                 }
             }
+            EmptyMessageVisible = _wallets.Count == 0;
             RaisePropertyChanged(nameof(Wallets));
         }
 
@@ -91,8 +115,6 @@ namespace WalletsWPF.Wallets
             InterfaceEnabled = enabled;
             RaisePropertyChanged(nameof(InterfaceEnabled));
         }
-
-        public MainNavigatableTypes Type => MainNavigatableTypes.Wallets;
 
         public void ClearSensitiveData()
         {

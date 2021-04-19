@@ -13,6 +13,7 @@
         <DataTemplate DataType="{x:Type local:UserInfoViewModel}">
             <local:UserInfoView></local:UserInfoView>
         </DataTemplate>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter" />
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -24,11 +25,12 @@
             <ColumnDefinition Width="5"></ColumnDefinition>
             <ColumnDefinition Width="3*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
+
         <!--Collection-->
         <ListView IsEnabled="{Binding InterfaceEnabled}" Grid.Column="0" Grid.Row="0" MinWidth="200" ItemsSource="{Binding Wallets}" DisplayMemberPath="FullName"
             SelectedItem="{Binding CurrentWallet}">
         </ListView>
+        <TextBlock Visibility="{Binding Path=EmptyMessageVisible, Converter={StaticResource BoolToVisConverter} }" TextWrapping="Wrap" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" FontSize="15">You have no wallets yet</TextBlock>
 
         <Button IsEnabled="{Binding InterfaceEnabled}" Grid.Row="1" FontSize="20" Grid.Column="0" Margin="10" Command="{Binding AddWalletCommand}">Add Wallet</Button>
 

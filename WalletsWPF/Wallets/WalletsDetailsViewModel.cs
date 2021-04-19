@@ -15,8 +15,8 @@ namespace WalletsWPF.Wallets
         private bool _nameEnabled;
         private bool _descriptionEnabled;
         private bool _currencyEnabled;
-        private string _validationMessage = "sfsfo";
-        private string ValidationMessage 
+        private string _validationMessage;
+        public string ValidationMessage 
         { 
             get => _validationMessage;
             set
@@ -34,7 +34,7 @@ namespace WalletsWPF.Wallets
             set
             {
                 _nameEnabled = value;
-                RaisePropertyChanged(nameof(DescriptionEnabled));
+                RaisePropertyChanged(nameof(NameEnabled));
             }
         }
         public bool CurrencyEnabled
@@ -52,7 +52,7 @@ namespace WalletsWPF.Wallets
             set
             {
                 _descriptionEnabled = value;
-                RaisePropertyChanged(nameof(NameEnabled));
+                RaisePropertyChanged(nameof(DescriptionEnabled));
             }
         }
         public Guid Guid
@@ -112,11 +112,11 @@ namespace WalletsWPF.Wallets
             {
                 if (_validationService.CurrencyPattern.IsMatch(value))
                 {
-                    EnableInterface.Invoke(true);
                     ValidationMessage = "";
                     DescriptionEnabled = true;
                     NameEnabled = true;
                     RemoveButtonEnabled = true;
+                    EnableInterface.Invoke(true);
                 }
                 else
                 {
@@ -155,7 +155,7 @@ namespace WalletsWPF.Wallets
         {
             get
             {
-                return $"{Name} ${Description}";
+                return $"{Name} ${Balance}";
             }
         }
 
@@ -174,6 +174,7 @@ namespace WalletsWPF.Wallets
             _wallet = wallet;
             RemoveWalletCommand = new DelegateCommand(() => removeWalletAction(Guid));
             EnableInterface = enableInterface;
+            _removeButtonEnabled = true;
             _validationService = new ValidationService();
             NameEnabled = true;
             DescriptionEnabled = true;
