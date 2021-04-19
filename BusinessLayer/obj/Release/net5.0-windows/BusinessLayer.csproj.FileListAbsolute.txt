@@ -1,0 +1,15 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\net5.0-windows\BusinessLayer.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\net5.0-windows\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\net5.0-windows\ref\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\net5.0-windows\BusinessLayer.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\net5.0-windows\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\net5.0-windows\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.csproj.CopyComplete
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\ref\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\net5.0-windows\BusinessLayer.pdb

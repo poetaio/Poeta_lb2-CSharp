@@ -1,0 +1,12 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\WalletsWPF.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\Authentication\AuthView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\Authentication\SignInView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\Authentication\SignUpView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\Header.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\MainView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\Wallets\WalletsDetailsView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\Wallets\WalletsView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\App.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\WalletsWPF_MarkupCompile.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\netcoreapp3.1\WalletsWPF_MarkupCompile.lref

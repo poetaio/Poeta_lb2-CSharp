@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Authentication\AuthView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Authentication\SignInView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -14,11 +17,17 @@
     <Compile Update="Header.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Wallets\TransactionDetailsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Wallets\WalletsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Authentication\AuthView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Authentication\SignInView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -29,6 +38,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Header.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Wallets\TransactionDetailsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Wallets\WalletsDetailsView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Wallets\WalletsView.xaml">

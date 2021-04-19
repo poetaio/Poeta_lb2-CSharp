@@ -12,21 +12,6 @@ namespace WalletsWPF
         public MainView()
         {
             InitializeComponent();
-            Content = new SignInView(GotoSignUp, GotoWallets);
-        }
-
-        public void GotoSignUp()
-        {
-            Content = new SignUpView(GotoSignIn);
-        }
-
-        public void GotoSignIn()
-        {
-            Content = new SignInView(GotoSignUp, GotoWallets);
-        }
-        public void GotoWallets()
-        {
-            Content = new WalletsView();
         }
     }
 }

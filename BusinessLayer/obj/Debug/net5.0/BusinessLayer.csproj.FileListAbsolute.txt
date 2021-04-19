@@ -10,3 +10,6 @@ F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Debug\net5.0\BusinessLayer
 F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
 F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
 F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Debug\net5.0\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Debug\net5.0\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.CopyComplete

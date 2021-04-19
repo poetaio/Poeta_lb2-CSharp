@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Xunit;
 using Wallets.BusinessLayer;
 using System.Drawing;
+using Wallets.BusinessLayer.Users;
 
 namespace Wallets.BusinessLayerTests
 {
@@ -12,9 +13,9 @@ namespace Wallets.BusinessLayerTests
         public void ValidationTest()
         {
             // Arrange
-            User validUser = new User("Ilia", "Poeta", "em@c.com");
-            User invalidNameUser = new User("", "Poeta", "em@c.com");
-            User invalidSurnameUser = new User("Ilia", "", "em@c.com");
+            User validUser = new User(Guid.NewGuid(), "Ilia", "Poeta", "em@c.com");
+            User invalidNameUser = new User(new Guid(), "", "Poeta", "em@c.com");
+            User invalidSurnameUser = new User(new Guid(), "Ilia", "", "em@c.com");
 
             // Act
             bool isValidValid = validUser.Validate();
@@ -31,9 +32,9 @@ namespace Wallets.BusinessLayerTests
         public void FullNameTest()
         {
             // Arrange
-            User validUser = new User("Ilia", "Poeta", "em@c.com");
-            User invalidNameUser = new User("", "Poeta", "em@c.com");
-            User invalidSurnameUser = new User("Ilia", "", "em@c.com");
+            User validUser = new User(new Guid(), "Ilia", "Poeta", "em@c.com");
+            User invalidNameUser = new User(new Guid(), "", "Poeta", "em@c.com");
+            User invalidSurnameUser = new User(new Guid(), "Ilia", "", "em@c.com");
             string expectedValidFullName = "Ilia Poeta";
             string expectedInvalidName = "Poeta";
             string expectedInvalidSurname = "Ilia";
@@ -53,8 +54,8 @@ namespace Wallets.BusinessLayerTests
         public void SharedWalletTest()
         {
             // Arrange
-            User firstUser = new User("U1", "U1", "em@c.com");
-            User secondUser = new User("U2", "U2", "em@c.com");
+            User firstUser = new User(new Guid(), "U1", "U1", "em@c.com");
+            User secondUser = new User(new Guid(), "U2", "U2", "em@c.com");
 
             Wallet wallet = new Wallet("Wallet", "Descr", "USD", 50);
             wallet.AddCategory(new Category(Color.Black));

@@ -4,29 +4,87 @@
     "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\WalletsWPF\\WalletsWPF.csproj": {}
   },
   "projects": {
-    "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\Models.csproj": {
+    "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\Models.csproj",
-        "projectName": "Models",
-        "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\Models.csproj",
+        "projectUniqueName": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\ilya2\\.nuget\\packages\\",
-        "outputPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\obj\\",
+        "outputPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ilya2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj": {
+                "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj",
+        "projectName": "DataStorage",
+        "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj",
+        "packagesPath": "C:\\Users\\ilya2\\.nuget\\packages\\",
+        "outputPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilya2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
             "projectReferences": {}
           }
         },
@@ -37,8 +95,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
           "imports": [
             "net461",
             "net462",
@@ -72,18 +130,21 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\Models.csproj": {
-                "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\Models.csproj"
+              "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\BusinessLayer.csproj"
+              },
+              "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj": {
+                "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj"
               }
             }
           }
@@ -95,8 +156,14 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Microsoft.Xaml.Behaviors.Wpf": {
+              "target": "Package",
+              "version": "[1.1.31, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -140,8 +207,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\Models.csproj": {
-                "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Models\\Models.csproj"
+              "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\BusinessLayer\\BusinessLayer.csproj"
+              },
+              "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj": {
+                "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\DataStorage\\DataStorage.csproj"
               },
               "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Services\\Services.csproj": {
                 "projectPath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Services\\Services.csproj"
@@ -159,6 +229,10 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "Nito.AsyncEx.Context": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
             "Prism.Core": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
@@ -178,7 +252,7 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             },
-            "Microsoft.WindowsDesktop.App.WPF": {
+            "Microsoft.WindowsDesktop.App": {
               "privateAssets": "none"
             }
           },

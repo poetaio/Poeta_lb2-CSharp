@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text.RegularExpressions;
+using Wallets.BusinessLayer.Users;
 
 namespace Wallets.BusinessLayer
 {
@@ -23,8 +24,8 @@ namespace Wallets.BusinessLayer
         public List<string> Files { get => _files; set => _files = value; }
         public User Author { get => _author; set => _author = value; }
 
-        public Transaction(DateTime date, decimal sum = 0, string description = "Default description", string currency = "USD", Category category = null,
-            List<String> files = null)
+        public Transaction(DateTime date, decimal sum = 0, string description = "Default description", string currency = "USD",
+            Category category = null, List<String> files = null, User author = null)
         {
             Date = date;
             Sum = sum;
@@ -32,6 +33,7 @@ namespace Wallets.BusinessLayer
             Currency = currency;
             Category = category == null ? new Category(Color.Black) : category;
             Files = files == null ? new List<string>() : files;
+            Author = author;
         }
 
         public int CompareTo(Transaction other)
@@ -70,6 +72,11 @@ namespace Wallets.BusinessLayer
             return $"Transaction \"{Description}\"" +
                 $" {sum}{Currency} on {Date}" +
                 $" Category: {Category}";
+        }
+
+        public Transaction Copy()
+        {
+            return new Transaction(Date, Sum, Description, Currency, Category, Files, Author);
         }
     }
 }

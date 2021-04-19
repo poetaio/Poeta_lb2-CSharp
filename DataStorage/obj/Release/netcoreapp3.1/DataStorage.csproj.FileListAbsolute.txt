@@ -1,0 +1,9 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Release\netcoreapp3.1\DataStorage.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Release\netcoreapp3.1\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Release\netcoreapp3.1\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\netcoreapp3.1\DataStorage.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\netcoreapp3.1\DataStorage.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\netcoreapp3.1\DataStorage.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\netcoreapp3.1\DataStorage.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\netcoreapp3.1\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\netcoreapp3.1\DataStorage.pdb

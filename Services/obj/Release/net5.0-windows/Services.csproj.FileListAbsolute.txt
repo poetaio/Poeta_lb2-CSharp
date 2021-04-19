@@ -1,0 +1,17 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\Services.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\ref\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\Services.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\BusinessLayer.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Release\net5.0-windows\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.GeneratedMSBuildEditorConfig.editorconfig
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.csproj.CopyComplete
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\ref\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Release\net5.0-windows\Services.pdb

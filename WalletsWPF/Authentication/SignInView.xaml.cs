@@ -9,17 +9,14 @@ namespace WalletsWPF.Authentication
     /// </summary>
     public partial class SignInView : UserControl
     {
-        private SignInViewModel _viewModel;
-        public SignInView(Action gotoSignUp, Action gotoWallets)
+        public SignInView()
         {
             InitializeComponent();
-            _viewModel = new SignInViewModel(gotoSignUp, gotoWallets);
-            this.DataContext = _viewModel;
         }
 
         private void TbPassword_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            _viewModel.Password = TbPassword.Password;
+            ((SignInViewModel)DataContext).Password = TbPassword.Password;
         }
     }
 

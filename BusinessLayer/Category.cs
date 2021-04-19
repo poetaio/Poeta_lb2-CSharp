@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Drawing;
+using Wallets.DataStorage;
 
 namespace Wallets.BusinessLayer
 {
-    public class Category : EntityBase, IComparable<Category>
+    public class Category : EntityBase, IComparable<Category>, IStorable
     {
         private string _name;
         private string _description;
@@ -15,12 +16,16 @@ namespace Wallets.BusinessLayer
         public Color Color { get => _color; set => _color = value; }
         public string Icon { get => _icon; set => _icon = value; }
 
-        public Category(Color color, string name = "Default name", string description = "Default description", string icon = "default.png")
+        public Guid Guid { get; }
+
+        public Category(Color color, string name = "Default name", string description = "Default description", 
+            string icon = "default.png")
         {
             Name = name;
             Description = description;
             Color = color;
             Icon = icon;
+            Guid = Guid.NewGuid();
         }
 
         public override bool Validate()
@@ -41,6 +46,11 @@ namespace Wallets.BusinessLayer
                 return 1;
 
             return Name.CompareTo(other.Name);
+        }
+
+        public Category Copy()
+        {
+            return new Category(Color, Name, Description, Icon);
         }
     }
 }

@@ -2,13 +2,14 @@
 using System.Text.RegularExpressions;
 using System;
 using System.Linq;
-using System.Collections.ObjectModel;
+using Wallets.BusinessLayer.Users;
+using Wallets.DataStorage;
 
 namespace Wallets.BusinessLayer
 {
-    public class Wallet : EntityBase
+    public class Wallet : EntityBase, IStorable
     {
-
+        private Guid _guid;
         private string _name;
         private string _description;
         private string _currency;
@@ -25,15 +26,17 @@ namespace Wallets.BusinessLayer
         public string Description { get => _description; set => _description = value; }
         public string Currency { get => _currency; set => _currency = value; }
 
-        public Wallet(string name = "Default name", string description = "Default description", string currency = "USD", decimal balance = 0,
-            List<Category> categoriesList = null, List<Transaction> transactionsList = null)
+        public Guid Guid { get => _guid; }
+
+        public Wallet(string name = "Default name", string description = "Default description", string currency = "USD", decimal balance = 0)
         {
-            _name = name;
-            _description = description;
-            _currency = currency;
-            _balance = balance;
-            _categoriesList = categoriesList == null ? new List<Category>() : categoriesList;
-            _transactionsList = transactionsList == null ? new List<Transaction>() : transactionsList;
+            _guid = Guid.NewGuid();
+            Name = name;
+            Description = description;
+            Currency = currency;
+            Balance = balance;
+            _categoriesList = new List<Category>();
+            _transactionsList = new List<Transaction>();
         }
 
         public void AddTransaction(Transaction newTransaction)
@@ -84,17 +87,17 @@ namespace Wallets.BusinessLayer
         // redefine [] operator
         public Transaction this[int index]
         {
-            get => _transactionsList[index];
+            get => _transactionsList[index].Copy();
             private set => _transactionsList[index] = value;
         }
 
-        public ReadOnlyCollection<Transaction> GetAllTransactions()
+        public List<Transaction> GetAllTransactions()
         {
-            return _transactionsList.AsReadOnly();
+            return _transactionsList.Select(tran => tran.Copy()).ToList();
         }
-        public ReadOnlyCollection<Category> GetAllCategories()
+        public List<Category> GetAllCategories()
         {
-            return _categoriesList.AsReadOnly();
+            return _categoriesList.Select(cat => cat.Copy()).ToList();
         }
 
         public void AddCategory(Category newCategory)
@@ -142,14 +145,19 @@ namespace Wallets.BusinessLayer
             _transactionsList.Reverse();
         }
 
+        
         public List<Transaction> GetTransactionsByUser(User user)
         {
-            return _transactionsList.FindAll(transaction => transaction.Author == user);
+            return _transactionsList.FindAll(transaction => transaction.Author == user)
+                .Select(tran => tran.Copy())
+                .ToList();
         }
 
         public List<Transaction> GetTransactionsByOtherUsers(User user)
         {
-            return _transactionsList.FindAll(transaction => transaction.Author != user);
+            return _transactionsList.FindAll(transaction => transaction.Author != user)
+                .Select(tran => tran.Copy())
+                .ToList();
         }
 
         public override bool Validate()
@@ -158,19 +166,14 @@ namespace Wallets.BusinessLayer
                 new Regex("[A-Z]{3}").IsMatch(Currency);
         }
 
-        public string DisplayTenTransactions(int from, int numberOfTransactions)
+        public List<Transaction> DisplayTenTransactions(int from, int numberOfTransactions)
         {
             if (from < 0 || from >= _transactionsList.Count || numberOfTransactions < 1 || numberOfTransactions > 10)
                 throw new ArgumentException("Invalid arguments");
 
-            string res = "";
-
-            foreach (Transaction transaction in _transactionsList.GetRange(from, numberOfTransactions))
-            {
-                res += transaction.ToString() + '\n';
-            }
-
-            return res;
+            return _transactionsList.GetRange(from, numberOfTransactions)
+                .Select(tran => tran.Copy())
+                .ToList();
         }
 
         private decimal LastMonthTransactionsTotal(bool positive)

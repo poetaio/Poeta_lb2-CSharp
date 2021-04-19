@@ -6,6 +6,38 @@
              xmlns:local="clr-namespace:WalletsWPF.Wallets"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <TextBlock FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Main application view!!!</TextBlock>
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type local:WalletsDetailsViewModel}">
+            <local:WalletsDetailsView></local:WalletsDetailsView>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:UserInfoViewModel}">
+            <local:UserInfoView></local:UserInfoView>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="100"></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <!--Collection-->
+        <ListView IsEnabled="{Binding InterfaceEnabled}" Grid.Column="0" Grid.Row="0" MinWidth="200" ItemsSource="{Binding Wallets}" DisplayMemberPath="FullName"
+            SelectedItem="{Binding CurrentWallet}">
+        </ListView>
 
+        <Button IsEnabled="{Binding InterfaceEnabled}" Grid.Row="1" FontSize="20" Grid.Column="0" Margin="10" Command="{Binding AddWalletCommand}">Add Wallet</Button>
+
+        <GridSplitter Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Stretch"></GridSplitter>
+        
+        <!--Details-->
+        <ContentControl  Grid.Column="2" Grid.Row="0" Content="{Binding CurrentWallet}"></ContentControl>
+        
+        <!--User info-->
+        <ContentControl Grid.Column="2" Grid.Row="1" Content="{Binding UserInfo}"></ContentControl>
+    </Grid>
 </UserControl>

@@ -1,0 +1,12 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Release\net5.0-windows\DataStorage.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Release\net5.0-windows\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Release\net5.0-windows\ref\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Release\net5.0-windows\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\DataStorage.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\DataStorage.GeneratedMSBuildEditorConfig.editorconfig
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\DataStorage.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\DataStorage.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\DataStorage.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\ref\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Release\net5.0-windows\DataStorage.pdb

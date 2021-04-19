@@ -1,0 +1,12 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Debug\net5.0\DataStorage.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Debug\net5.0\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Debug\net5.0\ref\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\bin\Debug\net5.0\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\DataStorage.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\DataStorage.GeneratedMSBuildEditorConfig.editorconfig
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\DataStorage.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\DataStorage.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\DataStorage.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\ref\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\DataStorage\obj\Debug\net5.0\DataStorage.pdb

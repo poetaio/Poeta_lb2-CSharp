@@ -5,8 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WalletsWPF.Authentication"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+             d:DesignHeight="450" d:DesignWidth="800"
+             IsEnabled="{Binding IsEnabled, UpdateSourceTrigger=PropertyChanged}"
+             VerticalAlignment="Top"
+             Margin="0,42,0,0">
+    <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" d:MinWidth="700" d:MinHeight="300">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -18,17 +21,17 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Button IsEnabled="False" MinWidth="150" Grid.Row="0" Grid.Column="0" FontSize="15" Height="30" MaxHeight="30" >Login</Button>
+        <Button Grid.Row="0" MinWidth="150" Grid.Column="1" Height="30" MaxHeight="30" Command="{Binding SignUpCommand}" Grid.ColumnSpan="1">Register</Button>
 
-        <StackPanel Grid.ColumnSpan="2">
-            <TextBlock Margin="10, 10, 10, 0">Login</TextBlock>
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="1">
+            <TextBlock HorizontalAlignment="Center" Width="300" Margin="10, 10, 10, 0">Login</TextBlock>
             <TextBox Name="TbLogin" Width="300" Margin="10" HorizontalAlignment="Center" Text="{Binding Login, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         </StackPanel>
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
-            <TextBlock Margin="10, 10, 10, 0">Password</TextBlock>
-            <PasswordBox Name="TbPassword" Width="300" Margin="10" HorizontalAlignment="Center" PasswordChanged="TbPassword_PasswordChanged" ></PasswordBox>
+        <StackPanel HorizontalAlignment="Center" Width="300" Grid.Row="2" Grid.ColumnSpan="2">
+            <TextBlock Margin="0, 20, 0, 10">Password</TextBlock>
+            <PasswordBox Name="TbPassword" Width="300" HorizontalAlignment="Center" PasswordChanged="TbPassword_PasswordChanged" ></PasswordBox>
         </StackPanel>
-        <Button Name="BSignIn" Grid.Row="2" Grid.Column="0" Margin="10" Command="{Binding SignInCommand}">Sign in</Button>
-        <Button Name="BClose" Grid.Row="2" Grid.Column="1" Margin="10" Command="{Binding CloseCommand}">Close</Button>
-        <Button Name="BGoToSignUp" Grid.Row="3" Grid.Column="0" Margin="10" Command="{Binding SignUpCommand}" Grid.ColumnSpan="2">Go to Sign Up</Button>
+        <Button Name="BSignIn" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" MinWidth="70" Width="120" Margin="10" Command="{Binding SignInCommand}">Sign in</Button>
     </Grid>
 </UserControl>

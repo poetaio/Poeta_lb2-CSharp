@@ -1,18 +1,16 @@
 ﻿using Prism.Commands;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using Wallets.Models;
+using Wallets.BusinessLayer.Users;
 using Wallets.Services;
+using WalletsWPF.Navigation;
 
 namespace WalletsWPF.Authentication
 {
-    public class SignUpViewModel : INotifyPropertyChanged
+    public class SignUpViewModel : INotifyPropertyChanged, INavigatable<AuthNavigatableTypes>
     {
         private RegistrationUser _regUser = new RegistrationUser();
 
@@ -20,6 +18,56 @@ namespace WalletsWPF.Authentication
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public AuthNavigatableTypes Type
+        {
+            get
+            {
+                return AuthNavigatableTypes.SignUp;
+            }
+        }
+
+
+        public string FirstName
+        {
+            get
+            {
+                return _regUser.FirstName;
+            }
+            set
+            {
+                _regUser.FirstName = value;
+                OnPropertyChanged(nameof(FirstName));
+                SignUpCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        public string LastName
+        {
+            get
+            {
+                return _regUser.LastName;
+            }
+            set
+            {
+                _regUser.LastName = value;
+                OnPropertyChanged(nameof(LastName));
+                SignUpCommand.RaiseCanExecuteChanged();
+            }
+        }
+
+        public string Email
+        {
+            get
+            {
+                return _regUser.Email;
+            }
+            set
+            {
+                _regUser.Email = value;
+                OnPropertyChanged(nameof(Email));
+                SignUpCommand.RaiseCanExecuteChanged();
+            }
+        }
         public string Login
         {
             get
@@ -47,20 +95,6 @@ namespace WalletsWPF.Authentication
             }
         }
 
-        public string LastName
-        {
-            get
-            {
-                return _regUser.LastName;
-            }
-            set
-            {
-                _regUser.LastName = value;
-                OnPropertyChanged(nameof(LastName));
-                SignUpCommand.RaiseCanExecuteChanged();
-            }
-        }
-
         public DelegateCommand SignUpCommand { get; }
         public DelegateCommand CloseCommand { get; }
         public DelegateCommand GotoSignInCommand { get; }
@@ -73,13 +107,13 @@ namespace WalletsWPF.Authentication
             GotoSignInCommand = new DelegateCommand(gotoSignUp);
         }
 
-        private void SignUp()
+        private async void SignUp()
         {
             var authService = new AuthenticationService();
 
             try
             {
-                authService.RegisterUser(_regUser);
+                await authService.RegisterUser(_regUser);
             }
             catch (Exception ex)
             {
@@ -93,7 +127,9 @@ namespace WalletsWPF.Authentication
 
         private bool IsSignUpEnabled()
         {
-            return !String.IsNullOrWhiteSpace(Login) && !String.IsNullOrWhiteSpace(Password) && !String.IsNullOrWhiteSpace(LastName);
+            return !String.IsNullOrWhiteSpace(Login) && !String.IsNullOrWhiteSpace(Password)
+                && !String.IsNullOrWhiteSpace(LastName) && !String.IsNullOrWhiteSpace(FirstName)
+                && !String.IsNullOrWhiteSpace(Email);
         }
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -101,5 +137,14 @@ namespace WalletsWPF.Authentication
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public void ClearSensitiveData()
+        {
+            _regUser = new RegistrationUser();
+        }
+
+        public Task UploadData()
+        {
+            return null;
+        }
     }
 }

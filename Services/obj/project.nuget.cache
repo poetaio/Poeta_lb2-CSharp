@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N88BXDjMnGqjYqEPu8xpdcxGgtAzfjoVtLlJiNOiuhgLenK8k7G9442Dw9kJHVQFT6GarmND+CIkigJQ4trzSw==",
+  "dgSpecHash": "dAnNZLcrj4lmMnDtAbubUy/hkYfmZ0dap08P2QEKjCxluy3o3sP/uNWzb49gi1VK2NgWc6poRlYHEFuJjpiuSw==",
   "success": true,
   "projectFilePath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\Services\\Services.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ilya2\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512"
+  ],
   "logs": []
 }

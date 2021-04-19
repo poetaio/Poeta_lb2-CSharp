@@ -1,0 +1,12 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\netcoreapp3.1\BusinessLayer.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\netcoreapp3.1\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\netcoreapp3.1\BusinessLayer.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\netcoreapp3.1\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\bin\Release\netcoreapp3.1\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.csproj.CopyComplete
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.pdb

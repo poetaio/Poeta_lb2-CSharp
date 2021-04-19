@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "eo7a800TSchWOCPX+qbBfg3dXnP8bRZueN79POvFI5Gjm2dK6fg6lJbL1m6KXycVXMvu3Yrmt67h5ONX3ZcRyw==",
+  "dgSpecHash": "q1G/WlHgUHzWOV8gnNVkIKILjJFwndHFMhTznQo7qPnlHbYwAZx8X1v3R8Z1+ESriO9jg0nA8OKuXc1lygJc0Q==",
   "success": true,
   "projectFilePath": "F:\\ilya\\Workspace\\C#\\labs\\Poeta_lb2\\WalletsWPF\\WalletsWPF.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ilya2\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512"
+    "C:\\Users\\ilya2\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\ilya2\\.nuget\\packages\\nito.asyncex.context\\5.1.0\\nito.asyncex.context.5.1.0.nupkg.sha512",
+    "C:\\Users\\ilya2\\.nuget\\packages\\nito.asyncex.tasks\\5.1.0\\nito.asyncex.tasks.5.1.0.nupkg.sha512",
+    "C:\\Users\\ilya2\\.nuget\\packages\\nito.disposables\\2.2.0\\nito.disposables.2.2.0.nupkg.sha512",
+    "C:\\Users\\ilya2\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\ilya2\\.nuget\\packages\\system.collections.immutable\\1.4.0\\system.collections.immutable.1.4.0.nupkg.sha512"
   ],
   "logs": []
 }

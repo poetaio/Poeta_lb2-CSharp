@@ -16,9 +16,7 @@ F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\WalletsW
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\ref\WalletsWPF.dll
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\WalletsWPF.pdb
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\Prism.dll
-F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\Models.dll
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\Services.dll
-F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\Models.pdb
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\Services.pdb
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\Authentication\SignInView.baml
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\Authentication\SignUpView.baml
@@ -37,3 +35,16 @@ F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\ref\Wall
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\WalletsWPF.pdb
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\WalletsWPF.genruntimeconfig.cache
 F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\Authentication\AuthView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\Authentication\AuthView.baml
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\Wallets\WalletsDetailsView.g.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\obj\Debug\net5.0-windows\Wallets\WalletsDetailsView.baml
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\BusinessLayer.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\GalaSoft.MvvmLight.Extras.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\GalaSoft.MvvmLight.Platform.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\GalaSoft.MvvmLight.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\System.Windows.Interactivity.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\WalletsWPF\bin\Debug\net5.0-windows\Microsoft.Expression.Interactions.dll

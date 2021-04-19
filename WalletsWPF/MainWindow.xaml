@@ -3,9 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WalletsWPF"
+        xmlns:local="clr-namespace:WalletsWPF" xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="18">
+        Title="MainWindow" MinHeight="520" MinWidth="800" MaxWidth="800" MaxHeight="520" FontSize="18"
+        >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" MinHeight="100"></RowDefinition>
@@ -14,8 +15,9 @@
 
         <!--Header-->
         <local:Header></local:Header>
-
-        <!--Main Control-->
-        <local:MainView Grid.Row="1"></local:MainView>
+        
+        <!--MainView-->
+        <local:MainView DataContext="{Binding MainViewModel}" Grid.Row="1"></local:MainView>
+        
     </Grid>
 </Window>

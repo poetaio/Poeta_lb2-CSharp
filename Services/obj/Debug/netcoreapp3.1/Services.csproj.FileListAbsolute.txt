@@ -1,0 +1,14 @@
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\netcoreapp3.1\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\netcoreapp3.1\Services.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\netcoreapp3.1\DataStorage.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\bin\Debug\netcoreapp3.1\DataStorage.pdb
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\netcoreapp3.1\Services.dll
+F:\ilya\Workspace\C#\labs\Poeta_lb2\Services\obj\Debug\netcoreapp3.1\Services.pdb
